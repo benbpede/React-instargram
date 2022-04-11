@@ -1,0 +1,61 @@
+.Header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.wrapper {
+  width: 954px;
+
+  display: flex;
+  margin: 0 auto;
+  margin-top: 11px;
+}
+
+.logo {
+  font-family: "Rancho", cursive;
+  font-size: 32px;
+  display: flex;
+  margin-right: 230px;
+}
+
+.search-box {
+  position: relative;
+  i {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    color: gray;
+  }
+  p {
+    position: absolute;
+    top: 5px;
+    color: gray;
+    left: 50px;
+  }
+}
+
+.search {
+  width: 268px;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  background: #efefef;
+}
+
+.nav-bar {
+  display: flex;
+  padding: 0;
+
+  margin-left: 54px;
+  li {
+    padding-left: 24px;
+    img {
+      width: 23px;
+      height: 23px;
+      margin-top: 6px;
+    }
+  }
+}
