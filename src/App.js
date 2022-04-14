@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
-import PostContents from "./components/PostContents";
+
 import DragPost from "./components/DragPost";
+import AllFeed from "./components/AllFeed";
 import { useState } from "react";
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
       {upload === true ? (
         <DragPost upload={upload} setUpload={setUpload} />
       ) : null}
+      <AllFeed />
     </div>
   );
 }
