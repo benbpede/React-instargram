@@ -5,6 +5,9 @@ import ImageAndVideoBlue from "../icons/ImageAndVideo(blue).svg";
 import { useState } from "react";
 
 const PostContents = (props) => {
+  const [nextBtn, setNextBtn] = useState(false);
+  const [backBtn, setBackBtn] = useState(false);
+
   const inputFile = useRef(null);
   const handleClick = (e) => {
     inputFile.current.click();
@@ -19,6 +22,14 @@ const PostContents = (props) => {
       content.style.backgroundSize = "cover";
       const div = content.querySelector("div");
       div.classList.add("hidden");
+
+      if (e.target.result === null) {
+        setBackBtn(false);
+        setNextBtn(false);
+      } else {
+        setBackBtn(true);
+        setNextBtn(true);
+      }
     };
 
     reader.readAsDataURL(e.target.files[0]);
@@ -27,9 +38,11 @@ const PostContents = (props) => {
   return (
     <>
       <div className="container">
-        <h1 className="post-title">
-          <div>새 게시물 만들기</div>
-        </h1>
+        <div className="post-title">
+          <h1>새 게시물 만들기</h1>
+          {backBtn ? <button className="backbtn">뒤로</button> : null}
+          {nextBtn ? <button className="nextbtn">다음</button> : null}
+        </div>
         <div className="content">
           <div>
             <img alt="" src={ImageAndVideo} className="post-space" />

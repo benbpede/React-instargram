@@ -5,8 +5,8 @@ import "./AllFeed.scss";
 const AllFeed = () => {
   let [data, setData] = useState([
     { id: "abc123", content: "", text: "블렌더 연습~" },
-    {},
-    {},
+    { id: "ffff_ildk", content: "", text: "오늘 점심" },
+    { id: "sdljkflkm", content: "", text: "제주도에서" },
   ]);
 
   return (

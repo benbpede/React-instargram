@@ -9,7 +9,7 @@ import Heart from "../icons/Heart.svg";
 
 const Header = (props) => {
   return (
-    <div className="Header">
+    <header className="Header">
       <div className="wrapper">
         <h1 className="logo">Instagram</h1>
         <div className="search-box">
@@ -45,7 +45,7 @@ const Header = (props) => {
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 
