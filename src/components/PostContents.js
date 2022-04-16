@@ -41,7 +41,15 @@ const PostContents = (props) => {
         <div className="post-title">
           <h1>새 게시물 만들기</h1>
           {backBtn ? <button className="backbtn">뒤로</button> : null}
-          {nextBtn ? <button className="nextbtn">다음</button> : null}
+          <aside>
+            <div></div>
+            <input type="text" placeholder="내용을 입력하세요." />
+          </aside>
+          {nextBtn ? (
+            <button className="nextbtn" onClick={() => {}}>
+              다음
+            </button>
+          ) : null}
         </div>
         <div className="content">
           <div>
