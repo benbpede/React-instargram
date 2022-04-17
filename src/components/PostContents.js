@@ -39,11 +39,14 @@ const PostContents = (props) => {
     <>
       <div className="container">
         <div className="post-title">
-          <h1>새 게시물 만들기</h1>
+          <h1>
+            <div>새 게시물 만들기</div>
+          </h1>
           {backBtn ? <button className="backbtn">뒤로</button> : null}
           <aside>
             <div></div>
-            <input type="text" placeholder="내용을 입력하세요." />
+            <textarea></textarea>
+            <input type="text" placeholder="문구 입력..." />
           </aside>
           {nextBtn ? (
             <button className="nextbtn" onClick={() => {}}>
