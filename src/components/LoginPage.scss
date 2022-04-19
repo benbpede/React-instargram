@@ -47,4 +47,18 @@ article {
   flex-direction: column;
   width: 268px;
   margin: 0 auto;
+  position: relative;
+  .id-text,
+  .pw-text {
+    position: absolute;
+    color: #868686;
+    font-size: 13px;
+  }
+  input {
+    background: #fafafa;
+    width: 268px;
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    margin-top: 6px;
+  }
 }

@@ -13,7 +13,9 @@ const LoginPage = () => {
                 <h1>Instagram</h1>
                 <div className="login-input">
                   <label className="id-input">
-                    <span>전화번호, 사용자 이름 또는 이메일</span>
+                    <span className="id-text">
+                      전화번호, 사용자 이름 또는 이메일
+                    </span>
                     <input
                       type="text"
                       aria-label="전화번호, 사용자 이름 또는 이메일"
@@ -23,7 +25,7 @@ const LoginPage = () => {
                     />
                   </label>
                   <label className="pw-input">
-                    <span>비밀번호</span>
+                    <span className="pw-text">비밀번호</span>
                     <input
                       type="text"
                       aria-label="비밀번호"
